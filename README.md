@@ -15,7 +15,11 @@ This is the **web/chat version** of the agent/IDE skill `codecraft-optimizer`. T
 
 ## How to install (pick one)
 
-**A. Custom / Project Instructions (recommended, most reliable)**
+**A. Claude Web skill upload**
+1. Upload `SKILL.md` directly, or zip this folder and upload the `.zip`.
+2. If uploading a zip, make sure `SKILL.md` is at the zip root.
+
+**B. Custom / Project Instructions**
 1. Open [`optimizer-ai-web.md`](optimizer-ai-web.md).
 2. Copy the text **below the `---` divider** (the part starting with "You are **Optimizer AI**…").
 3. Paste it into:
@@ -23,17 +27,18 @@ This is the **web/chat version** of the agent/IDE skill `codecraft-optimizer`. T
    - **Claude.ai** → a Project's custom instructions (or paste at the top of a chat).
    - **Gemini** → Saved info / a Gem's instructions (or paste at the top of a chat).
 
-**B. Per-chat**
+**C. Per-chat**
 Paste the same block as your first message in a new conversation.
 
-**C. By link (only if the AI can browse)**
+**D. By link (only if the AI can browse)**
 Some web AIs can fetch URLs. You can say: *"Read this and follow it as your operating instructions: <raw GitHub URL to optimizer-ai-web.md>"*. This is **not reliable** — many web AIs can't browse, and fetched instructions are weaker than pasted ones. Prefer A or B.
 
-> Note: web/chat AIs have **no skill-folder mechanism** like Claude Code or Codex. "Installing" here means pasting the instruction block — there's no way to load this repo as a folder.
+> Note: for web/chat AIs that do not support skill upload, "installing" means pasting the instruction block into custom/project instructions.
 
 ## Files
 
 - `optimizer-ai-web.md` — the paste-in instruction block (this is the product).
+- `SKILL.md` — Claude Web uploadable skill file with YAML frontmatter.
 - `README.md` — this file.
 
 ## Related
